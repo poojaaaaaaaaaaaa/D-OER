@@ -1,0 +1,61 @@
+/* Footer.css */
+.footer {
+    background-color: rgba(248, 249, 250, 0.8); /* Transparent background */
+    padding: 20px;
+    margin-top: 20px;
+}
+  
+.user {
+    margin-bottom: 20px;
+}
+  
+.user h3 {
+    color: #333;
+}
+  
+.user p {
+    margin: 0;
+}
+  
+.user strong {
+    font-weight: bold;
+}
+  
+.user a {
+    color: #007bff;
+    text-decoration: none;
+}
+  
+.user a:hover {
+    text-decoration: underline;
+}
+  
+ul {
+    padding-left: 20px;
+    list-style-type: none; /* Remove the bullet points */
+}
+  
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .user {
+        flex-direction: column;
+    }
+}
+  
+@media screen and (max-width: 576px) {
+    .footer {
+        padding: 10px;
+    }
+}
+  
+@media screen and (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+  
+    .user {
+        width: calc(50% - 20px); /* Adjust the width according to your preference */
+    }
+}
